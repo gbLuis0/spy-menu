@@ -53,7 +53,7 @@ clear()
 banner()
 temp()
 try:
-	opc = input(f'\n⟬ {a}1{f} ⟭ ━ {a}PAR OU ÍMPAR{f}\n⟬ {a}2{f} ⟭ ━ {a}JOKENPÔ{f}\n⟬ {a}3{f} ⟭ ━ {a}BHASKARA{f}\n⟬ {a}4{f} ⟭ ━ {a}ENCURTA LINK{f}\n⟬ {a}5{f} ⟭ ━ {a}MEU IP{f}\n\n⟬ {a}0{f} ⟭ ━ {a}SAIR{f}\n⟬ {a}99{f} ⟭ ━ {a}DIVULGAÇÃO{f}\n\n➤ ').strip().lower()
+	opc = input(f'\n⟬ {a}1{f} ⟭ ━ {a}PAR OU ÍMPAR{f}\n⟬ {a}2{f} ⟭ ━ {a}JOKENPÔ{f}\n⟬ {a}3{f} ⟭ ━ {a}BHASKARA{f}\n⟬ {a}4{f} ⟭ ━ {a}ENCURTA LINK{f}\n⟬ {a}5{f} ⟭ ━ {a}MEU IP{f}\n\n⟬ {a}0{f} ⟭ ━ {a}SAIR{f}\n⟬ {a}98{f} ⟭ ━ {a}ATUALIZAR{f}\n⟬ {a}99{f} ⟭ ━ {a}DIVULGAÇÃO{f}\n\n➤ ').strip().lower()
 except:
 	restart()
 if opc == '':
@@ -194,6 +194,10 @@ elif opc[0] == '5':
 elif opc[0] == '0':
 	clear()
 	print('\033[93;1mSpy deixou um abraço, volte sempre :)\033[m')
+elif opc[:2] == '98':
+	system('cd && rm -rf spy-menu')
+	system('git clone https://github.com/Spyware0/spy-menu')
+	system('cd spy-menu && bash install.sh && python3 menu.py')
 elif opc[:2] == '99':
 	clear()
 	system('figlet "G i t H u b" | lolcat')
