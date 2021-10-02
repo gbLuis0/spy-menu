@@ -197,7 +197,7 @@ elif opc[0] == '0':
 elif opc[:2] == '98':
 	home = system('cd && pwd')
 	system(f'mv atu.sh {home}')
-	system('bash atu.sh')
+	system('cd && bash atu.sh')
 elif opc[:2] == '99':
 	clear()
 	system('figlet "G i t H u b" | lolcat')
