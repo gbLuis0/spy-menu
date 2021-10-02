@@ -195,9 +195,9 @@ elif opc[0] == '0':
 	clear()
 	print('\033[93;1mSpy deixou um abraço, volte sempre :)\033[m')
 elif opc[:2] == '98':
-	system('cd && rm -rf spy-menu')
-	system('git clone https://github.com/Spyware0/spy-menu')
-	system('cd spy-menu && bash install.sh && python3 menu.py')
+	home = system('cd && pwd')
+	system(f'mv atu.sh {home}')
+	system('bash atu.sh')
 elif opc[:2] == '99':
 	clear()
 	system('figlet "G i t H u b" | lolcat')
