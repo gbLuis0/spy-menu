@@ -195,8 +195,7 @@ elif opc[0] == '0':
 	clear()
 	print('\033[93;1mSpy deixou um abraço, volte sempre :)\033[m')
 elif opc[:2] == '98':
-	home = system('cd && pwd')
-	system(f'mv atu.sh {home}')
+	system('cd && spy-menu/atu.sh .')
 	system('cd && bash atu.sh')
 elif opc[:2] == '99':
 	clear()
