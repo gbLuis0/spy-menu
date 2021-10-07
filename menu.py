@@ -189,6 +189,8 @@ elif opc[0] == '4':
 elif opc[0] == '5':
 	ip = get('https://ipwhois.app/json/').json()
 	print(f'{b}Seu endereço ip:{f} \033[4m{ip["ip"]}{f}')
+	for cha in ip:
+		print(f'{verde}{cha}:{f} {ip[cha]}')
 	enter()
 	restart()
 elif opc[0] == '0':
