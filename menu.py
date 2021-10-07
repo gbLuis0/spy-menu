@@ -187,7 +187,7 @@ elif opc[0] == '4':
 	        print('Ops, opção inválida...')
 	    enter()
 elif opc[0] == '5':
-	ip = get('https://ipwhois.app/json/').json()
+	ip = get('https://ipinfo.io/what-is-my-ip').json()
 	print(f'{b}Seu endereço ip:{f} \033[4m{ip["ip"]}{f}')
 	for cha in ip:
 		print(f'{verde}{cha}:{f} {ip[cha]}')
