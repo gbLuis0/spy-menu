@@ -117,6 +117,7 @@ elif opc[0] == '2':
 		else:
 			print(f'\033[4mOps, verifique se selecionou a opção correta...{f}')
 		enter()
+#swag omo sexual
 
 elif opc[0] == '3':
 	while True:
@@ -187,6 +188,7 @@ elif opc[0] == '4':
 	        print('Ops, opção inválida...')
 	    enter()
 elif opc[0] == '5':
+#baiano gay
 	ip = get('https://ipinfo.io/what-is-my-ip').json()
 	print(f'{b}Seu endereço ip:{f} \033[4m{ip["ip"]}{f}')
 	for cha in ip:
