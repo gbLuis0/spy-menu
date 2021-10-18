@@ -22,16 +22,12 @@ b = '\033[1m'
 #def
 def restart():
 	execv(sys.executable, ['python3'] + sys.argv)
-
 def clear():
-	system('clear')
-
+	system('cls||clear')
 def enter():
-	input(f'\nDigite enter para continuar')
-
+	input(f'\nenter para continuar')
 def banner():
 	system('cat banner | lolcat')
-
 def temp():
 	time = datetime.datetime
 	date = datetime.date
@@ -43,11 +39,10 @@ def temp():
 	data = f'{verde}Data📆:\033[m \033[1;4m{dia}/{mes}/{ano}\033[m'
 	horas = f'{verde}Hora⌚:\033[m \033[1;4m{hora}:{minute}\033[m'
 	print(f'{data}\n{horas}')
-
 def avs():
 	print(f'{amarelo}Quando digitar a url e der enter, espere uns segundos{f}')
 
-######################
+#
 
 clear()
 banner()
@@ -215,7 +210,6 @@ elif opc[:2] == '99':
 	print(f'{b}Jankess Softwares:{f}\n{al}https://github.com/AsmInstrutor{f}\n')
 	print(f'{b}AkTr_:{f}\n{al}https://github.com/AkTr-Team{f}\n')
 	print(f'{b}Lacoste:{f}\n{al}https://github.com/lacostehype{f}\n')
-
 	enter()
 	restart()
 
