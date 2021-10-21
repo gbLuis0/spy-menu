@@ -3,6 +3,8 @@
 ![](https://github.com/Spyware0/spy-menu/blob/main/m.png)
 Um pequeno menu com algumas opções!
 
+- OBS: caso execute o script pelo termux, recomendo que use o da [F-Droid](https://F-Droid.org) por ser mais atualizado, evitando erros indesejáveis...
+
 ### Algumas de suas opções:
 - [x] Par ou Ímpar
 - [x] Jokenpô
@@ -13,8 +15,8 @@ Um pequeno menu com algumas opções!
 
 ## Início 💻
 ```shell script
-apt update && apt upgrade -y
-pkg i git
+apt-get update && apt-get upgrade -y
+apt-get install git
 ```
 
 ## Instalação e execução📥
@@ -29,6 +31,8 @@ chmod +x menu.py
 > ⚠️ A execução do arquivo install.sh é importante para o funcionamento do menu⚠️
 
 > Depois das dependências instaladas, pode usar o menu a vontade!
+
+Caso queira entrar em contato, me chame no [Whatsapp](http://wa.me/559885267746)
 
 ***Deixe sua estrela :)***
 
