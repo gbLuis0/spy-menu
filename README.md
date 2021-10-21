@@ -3,7 +3,7 @@
 ![](https://github.com/Spyware0/spy-menu/blob/main/m.png)
 Um pequeno menu com algumas opções!
 
-- OBS: caso execute o script pelo termux, recomendo que use o da [F-Droid](https://F-Droid.org) por ser mais atualizado, evitando erros indesejáveis...
+- OBS: caso execute o script pelo termux, recomendo que o instale pelo [F-Droid](https://F-Droid.org) por ser mais atualizado, evitando erros indesejáveis...
 
 ### Algumas de suas opções:
 - [x] Par ou Ímpar
