@@ -1,10 +1,13 @@
 #!/bin/python3
-from requests import get
-import datetime
 from os import system,execv
-import sys
-from random import randint,choice
-from pyshorteners import Shortener
+try:
+	from requests import get
+	from pyshorteners import Shortener
+except:
+	system('pip install pyshorteners requests')
+import datetime
+from sys import executable, argv
+from random import randint, choice
 
 #cores
 f = '\033[m'
@@ -14,14 +17,13 @@ amarelo = '\033[33m'
 azul = '\033[34m'
 a = '\033[94;1m'
 al = '\033[34;4m'
-roxo = '\033[35m'
 ciano = '\033[96;1m'
 per = '\033[37;7m'
 b = '\033[1m'
 
-#def
+#def's
 def restart():
-	execv(sys.executable, ['python3'] + sys.argv)
+	execv(executable, ['python3'] + argv)
 def clear():
 	system('cls||clear')
 def enter():
@@ -191,12 +193,15 @@ elif opc[0] == '5':
 		print(f'{verde}{cha}:{f} {ip[cha]}')
 	enter()
 	restart()
+
 elif opc[0] == '0':
 	clear()
 	print('\033[93;1mSpy deixou um abraço, volte sempre :)\033[m')
+
 elif opc[:2] == '98':
 	system('chmod +x atu.sh && cd && cp spy-menu/atu.sh .')
 	system('cd && bash atu.sh')
+
 elif opc[:2] == '99':
 	clear()
 	system('figlet "G i t H u b" | lolcat')
