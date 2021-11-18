@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/bin/python3
 from requests import get
 import datetime
 from os import system,execv
@@ -42,8 +42,6 @@ def temp():
 def avs():
 	print(f'{amarelo}Quando digitar a url e der enter, espere uns segundos{f}')
 
-#
-
 clear()
 banner()
 temp()
@@ -53,6 +51,7 @@ except:
 	restart()
 if opc == '':
         restart()
+
 if opc[0] == '1':
 	n = npc = c = 0
 	ppc = p = ''
@@ -82,6 +81,7 @@ if opc[0] == '1':
 	    	print(f'\033[4mComputador{f}: {vermelho}{ppc}{f}, {vermelho}{npc}{f}')
 	    	print(f'\033[4mVocê{f}: {verde}{p}{f}, {verde}{n}{f}')
 	    enter()
+
 elif opc[0] == '2':
 	jkp = {'1':'PEDRA','2':'PAPEL','3':'TESOURA'}
 	nmr = ['1','2','3']
@@ -112,7 +112,7 @@ elif opc[0] == '2':
 		else:
 			print(f'\033[4mOps, verifique se selecionou a opção correta...{f}')
 		enter()
-#swag omo sexual
+#swag omo seqsual
 
 elif opc[0] == '3':
 	while True:
@@ -182,6 +182,7 @@ elif opc[0] == '4':
 	    else:
 	        print('Ops, opção inválida...')
 	    enter()
+
 elif opc[0] == '5':
 #baiano gay
 	ip = get('https://ipinfo.io/what-is-my-ip').json()
