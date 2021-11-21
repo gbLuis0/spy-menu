@@ -21,7 +21,7 @@ Um pequeno menu com algumas opções!
 
 ```bash
 apt-get update && apt-get upgrade -y
-apt-get install git
+apt-get install git -y
 ```
 
 <h2 align="center">Instalação e execução📥</h2>
